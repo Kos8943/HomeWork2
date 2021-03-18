@@ -86,6 +86,8 @@ namespace HomeWork2
 
             //將變數傳進Method
             this.GridView1.DataSource = ConnectDB.ReadSingleDroneDetail(sid);
+
+            //將回傳值放進GridView
             this.GridView1.DataBind();
         }
 
