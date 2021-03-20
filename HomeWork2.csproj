@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="DroneBattery.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="GridViewPage.aspx" />
+    <Content Include="HtmlTest.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -83,6 +85,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewPage.aspx.cs">
+      <DependentUpon>GridViewPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridViewPage.aspx.designer.cs">
+      <DependentUpon>GridViewPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlTest.aspx.cs">
+      <DependentUpon>HtmlTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HtmlTest.aspx.designer.cs">
+      <DependentUpon>HtmlTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">

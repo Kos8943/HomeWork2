@@ -28,6 +28,10 @@ namespace HomeWork2
 
             //將變數傳進Method
             ConnectDB.InsertIntoDroneBattery(sid, batteryName, stutas, stopReason);
+
+
+            this.GridView1.DataSource = ConnectDB.ReadDroneBattery();
+            this.GridView1.DataBind();
         }
 
         //刪除按鈕的event
@@ -38,6 +42,9 @@ namespace HomeWork2
 
             //將變數傳進Method
             ConnectDB.DelectBattery(sid);
+
+            this.GridView1.DataSource = ConnectDB.ReadDroneBattery();
+            this.GridView1.DataBind();
         }
 
         //修改按鈕的event
@@ -51,6 +58,9 @@ namespace HomeWork2
 
             //將變數傳進Method
             ConnectDB.UpDateBattery(sid, batteryName, stutas, stopReason);
+
+            this.GridView1.DataSource = ConnectDB.ReadDroneBattery();
+            this.GridView1.DataBind();
         }
 
         //查詢電池資料表按鈕的event

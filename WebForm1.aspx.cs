@@ -38,6 +38,9 @@ namespace HomeWork2
             //將變數傳進Method
             ConnectDB.InsertIntoDroneDetail(sid, name, Manufacturer, WeightLoad, Status, StopReason, Operator);
 
+            this.GridView1.DataSource = ConnectDB.ReadDroneDetail();
+            this.GridView1.DataBind();
+
         }
 
 
@@ -49,6 +52,9 @@ namespace HomeWork2
 
             //將變數傳進Method
             ConnectDB.DelectDroneDetail(sid);
+
+            this.GridView1.DataSource = ConnectDB.ReadDroneDetail();
+            this.GridView1.DataBind();
         }
 
 
@@ -67,6 +73,9 @@ namespace HomeWork2
 
             //將變數傳進Method
             ConnectDB.UpDateDroneDetail(sid, name, Manufacturer, WeightLoad, Status, StopReason, Operator);
+
+            this.GridView1.DataSource = ConnectDB.ReadDroneDetail();
+            this.GridView1.DataBind();
         }
 
 
