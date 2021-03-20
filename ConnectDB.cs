@@ -428,7 +428,7 @@ namespace HomeWork2
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex);
-                    HttpContext.Current.Response.Write(ex);
+                    //HttpContext.Current.Response.Write(ex);
 
                     return null;
                 }
@@ -546,8 +546,8 @@ namespace HomeWork2
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex);
-                    HttpContext.Current.Response.Write(ex);
+                    //Console.WriteLine(ex);
+                    //HttpContext.Current.Response.Write(ex);
 
                     return null;
                 }
@@ -606,7 +606,7 @@ namespace HomeWork2
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
+                    //Console.WriteLine(ex.Message);
                     return null;
                 }
 
