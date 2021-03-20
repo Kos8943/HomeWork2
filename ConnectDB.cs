@@ -170,7 +170,7 @@ namespace HomeWork2
                     dt.Load(reader);
 
                     //受影響的資料筆數(沒有使用)
-                    int totalChangRows = command.ExecuteNonQuery();
+                    //int totalChangRows = command.ExecuteNonQuery();
                     //HttpContext.Current.Response.Write("Total chang" + totalChangRows + " Rows.");
                     //Console.WriteLine("Total chang" + totalChangRows + " Rows.");
 
@@ -232,8 +232,8 @@ namespace HomeWork2
 
 
                     //受影響的資料筆數(沒有使用)
-                    int totalChangRows = command.ExecuteNonQuery();
-                    Console.WriteLine("Total chang" + totalChangRows + " Rows.");
+                    //int totalChangRows = command.ExecuteNonQuery();
+                    //Console.WriteLine("Total chang" + totalChangRows + " Rows.");
 
 
                     return dt;
@@ -538,8 +538,8 @@ namespace HomeWork2
                     dt.Load(reader);
 
                     //受影響的資料筆數(沒有使用)
-                    int totalChangRows = command.ExecuteNonQuery();
-                    Console.WriteLine("Total chang" + totalChangRows + " Rows.");
+                    //int totalChangRows = command.ExecuteNonQuery();
+                    //Console.WriteLine("Total chang" + totalChangRows + " Rows.");
 
                     return dt;
 
